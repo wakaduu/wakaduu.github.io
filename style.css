@@ -173,11 +173,13 @@ footer {
     margin-top: 30px;
 }
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures it doesn't stretch */
     display: block;
-    margin: 20px auto;
-    border: 3px solid #0077b6;
+    margin: 20px auto; /* Centers the image */
+    border: 3px solid #0077b6; /* Optional border */
+}
+
 }
