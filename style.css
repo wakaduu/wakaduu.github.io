@@ -1,119 +1,102 @@
+/* Modern Dynamic Theme for Robert Wachira's Website */
+
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     color: #333;
-    text-align: center;
+    scroll-behavior: smooth;
 }
 
-/* Header */
+/* Header Styling */
 header {
-    background: #0077b6;
+    background: linear-gradient(135deg, #0077b6, #005f8d);
     color: white;
-    padding: 20px;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Navigation Bar */
 nav {
     background: #005f8d;
-    padding: 10px;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
+    color: #ffcc00;
     text-decoration: underline;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 /* Profile Section */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-}
-
-/* Profile Picture */
-.profile-pic {
-    width: 150px;
-    height: 150px;
+.profile img {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #0077b6;
-    display: block;
-    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
 }
 
-/* Contact Information */
-.contact-info p {
-    font-size: 18px;
-    margin: 5px 0;
-}
-
-.contact-info a {
-    color: #0077b6;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
+.profile img:hover {
+    transform: scale(1.1);
 }
 
 /* Buttons */
 .btn {
     display: inline-block;
+    padding: 12px 25px;
     margin: 10px;
-    padding: 12px 20px;
     background: #0077b6;
     color: white;
+    font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 18px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s;
 }
 
 .btn:hover {
-    background: #005f8d;
-    transform: scale(1.05);
+    background: #ffcc00;
+    color: #333;
 }
 
 /* Footer */
 footer {
     background: #222;
     color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
-.profile-pic {
-    width: 150px;  /* Adjust the width */
-    height: 150px;  /* Maintain square shape */
-    border-radius: 50%; /* Make it circular */
-    object-fit: cover; /* Ensure proper cropping */
-    display: block;
-    margin: 0 auto; /* Center the image */
-    border: 3px solid #0077b6; /* Add a border (optional) */
-}
-.profile-pic {
-    width: 150px; /* Adjust as needed */
-    height: auto;
-    border-radius: 50%; /* Makes it round */
-    display: block;
-    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
 }
