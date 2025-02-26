@@ -1,19 +1,22 @@
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
 }
 
+/* Header */
 header {
     background: #0077b6;
     color: white;
     text-align: center;
     padding: 20px;
+    font-size: 24px;
 }
 
+/* Navigation */
 nav {
     background: #005f8d;
     padding: 10px;
@@ -23,10 +26,11 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -34,52 +38,61 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: #ffdd57; /* Adds a golden touch when hovered */
 }
 
+/* Container Styling */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 50px 20px;
     text-align: center;
-    padding: 30px;
     max-width: 900px;
     margin: auto;
 }
 
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Profile Image */
 .profile img {
     width: 150px;
     border-radius: 50%;
     margin-bottom: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.profile h2 {
-    margin: 10px 0;
-}
-
+/* Buttons */
 .btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 15px;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 20px;
     background: #0077b6;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s, transform 0.2s;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
 }
 
 .btn:hover {
     background: #005f8d;
-    transform: scale(1.05);
 }
 
+/* Services Section */
 .services {
     background: white;
     padding: 20px;
@@ -91,57 +104,29 @@ nav ul li a:hover {
     padding: 0;
 }
 
+/* Footer */
 footer {
     background: #222;
     color: white;
     text-align: center;
     padding: 15px;
-    font-size: 14px;
 }
 
-footer a {
-    color: #ffdd57;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+/* Responsive Design */
 @media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-    
-    .grid {
-        grid-template-columns: 1fr;
+    .container {
+        padding: 30px 10px;
     }
 
-    .hero {
-        padding: 60px 20px;
-    }
-
-    .hero h1 {
+    h1 {
         font-size: 28px;
     }
 
-    .hero p {
-        font-size: 18px;
+    nav ul {
+        flex-direction: column;
     }
-}
-.btn {
-    transition: all 0.3s ease-in-out;
-}
 
-.btn:hover {
-    transform: scale(1.05);
-}
-
-.item img {
-    transition: all 0.3s ease-in-out;
-}
-
-.item img:hover {
-    transform: scale(1.1);
+    nav ul li {
+        margin: 10px 0;
+    }
 }
