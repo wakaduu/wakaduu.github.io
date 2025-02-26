@@ -172,3 +172,12 @@ footer {
     padding: 15px;
     margin-top: 30px;
 }
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #0077b6;
+}
