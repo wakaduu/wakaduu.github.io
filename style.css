@@ -1,132 +1,57 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Header */
-header {
-    background: #0077b6;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 24px;
-}
-
-/* Navigation */
-nav {
-    background: #005f8d;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Container Styling */
-.container {
-    padding: 50px 20px;
-    text-align: center;
-    max-width: 900px;
-    margin: auto;
-}
-
-h1, h2, h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-p {
-    text-align: justify;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    font-size: 16px;
-}
-
-/* Profile Image */
-.profile img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Buttons */
-.btn {
-    display: block;
-    width: fit-content;
-    margin: 20px auto;
-    padding: 12px 20px;
-    background: #0077b6;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.btn:hover {
-    background: #005f8d;
-}
-
-/* Services Section */
-.services {
-    background: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.services ul {
-    list-style: none;
-    padding: 0;
-}
-
-/* Footer */
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 30px 10px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Wachira | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Robert Wachira</h1>
+        <p>Data Annotator | Linguist | Web Developer</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about" class="container">
+        <img src="profile.jpg" alt="Robert Wachira" class="profile-pic">
+        <h2>About Me</h2>
+        <p>Passionate linguist and AI data expert, specializing in transcription, annotation, and machine learning training. Fluent in English, Swahili, German, and Kikuyu.</p>
+    </section>
+    
+    <section id="portfolio" class="container">
+        <h2>Portfolio</h2>
+        <div class="grid">
+            <div class="card">AI Annotation Projects</div>
+            <div class="card">Machine Learning Training</div>
+            <div class="card">Multilingual Transcription</div>
+            <div class="card">Web Development Projects</div>
+        </div>
+    </section>
+    
+    <section id="resume" class="container">
+        <h2>Resume</h2>
+        <a href="files/Robert_Wachira_Resume.pdf" download class="btn">Download Resume (PDF)</a>
+    </section>
+    
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/robertwachira" target="_blank">LinkedIn Profile</a></p>
+    </section>
+    
+    <footer>
+        <p>© 2025 Robert Wachira. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
