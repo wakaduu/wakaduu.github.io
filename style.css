@@ -1,4 +1,4 @@
-/* General Styling */
+/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -29,20 +29,34 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Page Content */
-h1 {
-    color: #0073e6;
+/* Hero Section */
+.hero {
+    background: white;
+    padding: 50px 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
     margin-top: 20px;
-}
-
-p {
-    font-size: 18px;
-    margin: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
 }
