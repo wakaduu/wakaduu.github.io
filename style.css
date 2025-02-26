@@ -1,58 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert Wachira | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <header>
-        <div class="logo">RW</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle">🌙</button></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Data Linguist | AI Trainer | Developer</p>
-        <a href="#portfolio" class="btn">View My Work</a>
-    </section>
-    
-    <section id="about" class="content">
-        <h2>About Me</h2>
-        <p>I am a professional data linguist specializing in AI training, transcription, and translation.</p>
-    </section>
-    
-    <section id="portfolio" class="content">
-        <h2>My Work</h2>
-        <div class="grid">
-            <div class="item">Project 1</div>
-            <div class="item">Project 2</div>
-            <div class="item">Project 3</div>
-        </div>
-    </section>
-    
-    <section id="resume" class="content">
-        <h2>Resume</h2>
-        <a href="resume.pdf" download class="btn">Download My Resume</a>
-    </section>
-    
-    <section id="contact" class="content">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Robert Wachira. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #0077b6, #005f8d);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 1.8em;
+}
+
+/* Navigation */
+nav {
+    background: #004466;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+/* Main Sections */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Profile Image */
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #0077b6;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #005f8d;
+    transform: scale(1.05);
+}
+
+/* Portfolio Section */
+.portfolio {
+    text-align: center;
+    padding: 40px;
+}
+
+.portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #005f8d;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background: #0077b6;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #005f8d;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
