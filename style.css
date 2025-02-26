@@ -108,3 +108,25 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
