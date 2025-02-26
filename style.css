@@ -1,57 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert Wachira | Professional Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        <h1>Robert Wachira</h1>
-        <p>Data Annotator | Linguist | Web Developer</p>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about" class="container">
-        <img src="profile.jpg" alt="Robert Wachira" class="profile-pic">
-        <h2>About Me</h2>
-        <p>Passionate linguist and AI data expert, specializing in transcription, annotation, and machine learning training. Fluent in English, Swahili, German, and Kikuyu.</p>
-    </section>
-    
-    <section id="portfolio" class="container">
-        <h2>Portfolio</h2>
-        <div class="grid">
-            <div class="card">AI Annotation Projects</div>
-            <div class="card">Machine Learning Training</div>
-            <div class="card">Multilingual Transcription</div>
-            <div class="card">Web Development Projects</div>
-        </div>
-    </section>
-    
-    <section id="resume" class="container">
-        <h2>Resume</h2>
-        <a href="files/Robert_Wachira_Resume.pdf" download class="btn">Download Resume (PDF)</a>
-    </section>
-    
-    <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/robertwachira" target="_blank">LinkedIn Profile</a></p>
-    </section>
-    
-    <footer>
-        <p>© 2025 Robert Wachira. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+/* Restore button color */
+button {
+    background: #0077b6; 
+    color: white; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 18px;
+}
+
+/* Restore button hover color without animation */
+button:hover {
+    background: #005f8d;
+}
+
+/* Restore link button color */
+.btn {
+    background: #0077b6;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Restore hover effect without animation */
+.btn:hover {
+    background: #005f8d;
+}
+
+/* Remove animations */
+.btn:hover, .item img:hover { transform: none !important; }
+.btn, .item img { transition: none !important; }
