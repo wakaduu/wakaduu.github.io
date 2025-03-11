@@ -66,4 +66,28 @@ footer {
     background: #2c3e50;
     color: white;
     padding: 10px;
+    /* Center the About section */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Style the profile picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 600px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 }
